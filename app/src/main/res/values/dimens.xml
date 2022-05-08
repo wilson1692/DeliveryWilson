@@ -5,8 +5,10 @@
     <dimen name="text_height">24dip</dimen>
     <dimen name="top_border_password">250dip</dimen>
     <dimen name="top_border_password_text">300dip</dimen>
-    <dimen name="top_border_button">100dip</dimen>
-    <dimen name="margin_top_restart">512dip</dimen>
+    <dimen name="top_border_button">80dip</dimen>
+    <dimen name="top_border_title">60dip</dimen>
+
+
 
 
 

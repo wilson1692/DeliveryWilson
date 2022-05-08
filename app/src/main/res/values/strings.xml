@@ -2,6 +2,7 @@
     <string name="app_name">Delivery Wilson</string>
     <string name="user">Usuario</string>
     <string name="password">Contraseña</string>
-    <string name="loggin">Entrar</string>
-    <string name="restart_Loggin">Olvido su contraseña??</string>
+    <string name="loggin">LOGIN</string>
+    <string name="user_loggin">USER LOGIN</string>
+
 </resources>
