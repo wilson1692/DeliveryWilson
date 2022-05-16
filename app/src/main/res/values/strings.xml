@@ -4,5 +4,10 @@
     <string name="password">Contraseña</string>
     <string name="loggin">LOGIN</string>
     <string name="user_loggin">USER LOGIN</string>
+    <string name="name">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="phone">Telefono</string>
+    <string name="correo">Correo</string>
+
 
 </resources>

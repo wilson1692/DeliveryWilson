@@ -3,7 +3,7 @@
     <dimen name="top_border">120dip</dimen>
     <dimen name="border_left_right">20dip</dimen>
     <dimen name="text_height">24dip</dimen>
-    <dimen name="top_border_password">250dip</dimen>
+    <dimen name="top_border_password">260dip</dimen>
     <dimen name="top_border_password_text">300dip</dimen>
     <dimen name="top_border_button">80dip</dimen>
     <dimen name="top_border_title">60dip</dimen>

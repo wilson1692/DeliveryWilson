@@ -1,113 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradiente"
+    android:background="@drawable/noche"
+    android:outlineAmbientShadowColor="@color/white"
     tools:context=".MainActivity">
 
-
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/border_left_right"
-        android:layout_marginTop="@dimen/top_border_title"
-        android:layout_marginRight="@dimen/border_left_right"
-        android:text="@string/user_loggin"
-        android:textAlignment="center"
-        android:textSize="@dimen/text_height"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_user_label"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/border_left_right"
-        android:layout_marginTop="@dimen/top_border"
-        android:layout_marginRight="@dimen/border_left_right"
-        android:text="@string/user"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_height"
-        app:layout_constraintTop_toTopOf="parent"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/border_left_right"
+            android:layout_marginTop="@dimen/top_border_title"
+            android:layout_marginRight="@dimen/border_left_right"
+            android:text="@string/user_loggin"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_height"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        />
+        <TextView
+            android:id="@+id/text_user_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/border_left_right"
+            android:layout_marginTop="@dimen/top_border"
+            android:layout_marginRight="@dimen/border_left_right"
+            android:text="@string/user"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_height"
+            app:layout_constraintTop_toTopOf="parent"
 
+            />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/text_height"
-        android:ems="10"
-        android:hint="@string/user"
-        android:inputType="textPersonName"
-        app:layout_constraintLeft_toLeftOf="@id/text_user_label"
-        app:layout_constraintRight_toRightOf="@id/text_user_label"
-        app:layout_constraintTop_toBottomOf="@id/text_user_label"
-        android:background="@drawable/redondeado"
-        android:drawableLeft="@mipmap/users"
-        android:drawablePadding="10dp"
-
-
-        />
-
-    <TextView
-        android:id="@+id/text_password_label"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/border_left_right"
-        android:layout_marginTop="@dimen/top_border_password"
-        android:layout_marginRight="@dimen/border_left_right"
-        android:text="@string/password"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_height"
-        app:layout_constraintTop_toTopOf="parent"
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_height"
+            android:background="@drawable/redondeado"
+            android:drawableLeft="@drawable/user1"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/user"
+            android:inputType="textPersonName"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/text_user_label"
+            app:layout_constraintRight_toRightOf="@id/text_user_label"
+            app:layout_constraintTop_toBottomOf="@id/text_user_label"
 
 
-        />
+            />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/top_border_password_text"
-        android:layout_marginBottom="12dp"
-        android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        app:layout_constraintLeft_toLeftOf="@id/text_user_label"
-        app:layout_constraintRight_toRightOf="@id/text_user_label"
-        app:layout_constraintTop_toBottomOf="@id/text_user_label"
-        app:layout_constraintTop_toTopOf="parent"
-        app:cornerRadius="8dp"
-        android:textColor="@color/white"
-        android:background="@drawable/redondeado"
-        android:drawableRight="@mipmap/password_round"
-        android:paddingLeft="20dp"
-
-        />
+        <TextView
+            android:id="@+id/text_password_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/border_left_right"
+            android:layout_marginTop="@dimen/top_border_password"
+            android:layout_marginRight="@dimen/border_left_right"
+            android:text="@string/password"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_height"
+            app:layout_constraintTop_toTopOf="parent"
 
 
-    <Button
-        android:id="@+id/button_Loggin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/top_border_button"
-        android:layout_marginTop="404dp"
-        android:layout_marginRight="@dimen/top_border_button"
-        android:text="@string/loggin"
-        android:textSize="@dimen/text_height"
-        app:layout_constraintTop_toTopOf="parent"
-        app:cornerRadius="20dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_border_password_text"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/redondeado"
+            android:drawableRight="@drawable/contra"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/text_user_label"
+            app:layout_constraintRight_toRightOf="@id/text_user_label"
+            app:layout_constraintTop_toBottomOf="@id/text_user_label"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
 
 
-        />
+        <Button
+            android:id="@+id/button_Loggin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/top_border_button"
+            android:layout_marginTop="404dp"
+            android:layout_marginRight="@dimen/top_border_button"
+            android:backgroundTint="@color/white"
+            android:text="@string/loggin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_height"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
